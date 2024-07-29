@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// const accessKey = import.meta.env.VITE_UNSPLASH_API;
-const accessKey = 'YStn7sl8eChZrz6_wEKnSRMQHnSMg7u_LLFTIOUb9mg';
+const accessKey = import.meta.env.VITE_UNSPLASH_API;
+// const accessKey = 'YStn7sl8eChZrz6_wEKnSRMQHnSMg7u_LLFTIOUb9mg';
 
 axios.defaults.baseURL = 'https://api.unsplash.com';
 axios.defaults.headers.common = {
