@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const accessKey = '0XfratyWFwazd3jtriqayK492B62RxDitahoXV8T95Y';
+const accessKey = import.meta.env.VITE_unsplash_api;
 
 axios.defaults.baseURL = 'https://api.unsplash.com';
 axios.defaults.headers.common = {
@@ -8,7 +8,7 @@ axios.defaults.headers.common = {
   'Accept-Version': 'v1',
 };
 const perPage = 12;
-async function getImages(query, page) {
+export default async function getImages(query, page) {
   const response = await axios.get('/search/photos', {
     params: {
       query,
@@ -19,5 +19,3 @@ async function getImages(query, page) {
   const { results: images, total_pages: totalPages } = response.data;
   return { images, totalPages };
 }
-
-export default getImages;

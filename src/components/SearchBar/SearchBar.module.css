@@ -22,18 +22,18 @@
   font-size: 18px;
   padding: 12px 20px;
   border-radius: 10px;
-  background-color: rgb(150, 150, 150);
+  background-color: #92d2e7;
   transition: border 0.2s ease;
   color: #fff;
-  border: 1px solid rgb(117, 117, 117);
+  border: 1px solid #4390aa;
 }
 
 .input:hover {
-  border: 1px solid rgb(127, 127, 127);
+  border: 1px solid #4b9bb6;
 }
 
 .input:focus {
-  border: 1px solid rgb(149, 149, 149);
+  border: 1px solid #53acca;
 }
 
 .input::placeholder {
@@ -60,9 +60,9 @@
   scale: 1.2;
 }
 
-/* .toaster {
+.toaster {
   background-color: #6d6d6d;
   border: 1px solid #757575;
   padding: 8px;
   color: #bababa;
-} */
+}
