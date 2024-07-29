@@ -26,7 +26,6 @@ const App = () => {
   });
 
   const handleSearchSubmit = newQuery => {
-    console.log('Search query:', newQuery);
     setIsError(false);
     setQuery(newQuery);
     setImages([]);

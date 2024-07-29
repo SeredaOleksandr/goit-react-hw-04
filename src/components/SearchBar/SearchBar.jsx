@@ -33,7 +33,7 @@ const SearchBar = ({ onSubmit }) => {
       >
         <Form className={s.form}>
           <Field
-            type="search"
+            type="text"
             name="searchQuery"
             autoComplete="off"
             autoFocus
