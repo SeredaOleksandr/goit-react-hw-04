@@ -4,7 +4,7 @@ import SearchBar from '../SearchBar/SearchBar';
 import ImageGallery from '../ImageGallery/ImageGallery';
 import Loader from '../Loader/Loader';
 import ErrorMessage from '../ErrorMessage/ErrorMessage';
-import getImages from '../../api/images';
+import getImages from '../../api/getImages';
 import ImageModal from '../ImageModal/ImageModal';
 import LoadMoreBtn from '../LoadMoreBtn/LoadMoreBtn';
 

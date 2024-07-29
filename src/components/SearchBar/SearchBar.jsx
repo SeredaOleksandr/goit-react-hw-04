@@ -33,7 +33,7 @@ const SearchBar = ({ onSubmit }) => {
       >
         <Form className={s.form}>
           <Field
-            type="text"
+            type="search"
             name="searchQuery"
             autoComplete="off"
             autoFocus
@@ -43,28 +43,9 @@ const SearchBar = ({ onSubmit }) => {
           <button className={s.button} type="submit">
             <CiSearch size="22px" />
           </button>
-          <Toaster
-            containerStyle={{
-              top: 80,
-            }}
-            toastOptions={{
-              style: {
-                backgroundColor: '#6d6d6d',
-                border: '1px solid #757575',
-                padding: '8px',
-                color: '#bababa',
-                marginTop: '40px',
-              },
-              error: {
-                iconTheme: {
-                  primary: '#c36060',
-                  secondary: '#dcdcdc',
-                },
-              },
-            }}
-          />
         </Form>
       </Formik>
+      <Toaster position="top-right" />
     </header>
   );
 };

@@ -2,6 +2,7 @@ import s from './ImageModal.module.css';
 import Modal from 'react-modal';
 import { FaHeart } from 'react-icons/fa';
 import { MdPhotoCamera } from 'react-icons/md';
+
 Modal.setAppElement('#root');
 
 const ImageModal = ({
